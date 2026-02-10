@@ -8,5 +8,6 @@ namespace CapaDatos
 {
     public class Conexion
     {
+        public static string Conn = "Data source = ValeLaptop; Initial Catalog = DBPos; Integrated Security = True";
     }
 }
