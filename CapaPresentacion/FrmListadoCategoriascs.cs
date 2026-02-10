@@ -60,6 +60,9 @@ namespace CapaPresentacion
         private void btnnuevo_Click(object sender, EventArgs e)
         {
             FrmRegistrarCategorias form = new FrmRegistrarCategorias();
+
+            form.Insert = true;
+
             form.Show();
             this.Hide();
         }
@@ -67,6 +70,8 @@ namespace CapaPresentacion
         private void btneditar_Click(object sender, EventArgs e)
         {
             FrmRegistrarCategorias form = new FrmRegistrarCategorias();
+
+            form.Edit = true;
 
             form.txtidcategoria.Text = this.dlistado.CurrentRow.Cells["id_categoria"].Value.ToString();
             form.txtnombre.Text = this.dlistado.CurrentRow.Cells["nombre"].Value.ToString();
