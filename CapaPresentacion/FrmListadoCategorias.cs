@@ -12,9 +12,9 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class FrmListadoCategoriascs : Form
+    public partial class FrmListadoCategorias : Form
     {
-        public FrmListadoCategoriascs()
+        public FrmListadoCategorias()
         {
             InitializeComponent();
         }

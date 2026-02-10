@@ -50,7 +50,7 @@ namespace CapaPresentacion
                     this.Insert = false;
                     this.Edit = false;
 
-                    FrmListadoCategoriascs form = new FrmListadoCategoriascs();
+                    FrmListadoCategorias form = new FrmListadoCategorias();
                     form.Show();
                     this.Hide();
                 }
