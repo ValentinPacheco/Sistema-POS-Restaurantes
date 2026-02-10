@@ -107,6 +107,7 @@
             this.dlistado.Name = "dlistado";
             this.dlistado.RowHeadersWidth = 51;
             this.dlistado.RowTemplate.Height = 24;
+            this.dlistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dlistado.Size = new System.Drawing.Size(415, 150);
             this.dlistado.TabIndex = 2;
             // 
@@ -140,7 +141,7 @@
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
-            // FrmListadoCategoriascs
+            // FrmListadoCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +152,7 @@
             this.Controls.Add(this.dlistado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "FrmListadoCategoriascs";
+            this.Name = "FrmListadoCategorias";
             this.Text = "FrmListadoCategoriascs";
             this.Load += new System.EventHandler(this.FrmListadoCategoriascs_Load);
             this.panel1.ResumeLayout(false);
