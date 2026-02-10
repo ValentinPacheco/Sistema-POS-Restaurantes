@@ -60,5 +60,12 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            FrmListadoCategorias form = new FrmListadoCategorias();
+            form.Show();
+            this.Hide();
+        }
     }
 }
