@@ -113,9 +113,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.TextBox txtidcategoria;
+        public System.Windows.Forms.TextBox txtidcategoria;
+        public System.Windows.Forms.TextBox txtnombre;
     }
 }

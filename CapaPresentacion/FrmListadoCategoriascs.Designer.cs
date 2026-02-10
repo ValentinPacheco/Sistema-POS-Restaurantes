@@ -81,6 +81,7 @@
             this.btnsalir.TabIndex = 2;
             this.btnsalir.Text = "&Salir";
             this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btnbuscar
             // 
@@ -90,6 +91,7 @@
             this.btnbuscar.TabIndex = 1;
             this.btnbuscar.Text = "&Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // txtbuscar
             // 
@@ -116,6 +118,7 @@
             this.btnnuevo.TabIndex = 3;
             this.btnnuevo.Text = "&Nuevo";
             this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
             // btneditar
             // 
@@ -125,6 +128,7 @@
             this.btneditar.TabIndex = 4;
             this.btneditar.Text = "&Editar";
             this.btneditar.UseVisualStyleBackColor = true;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btneliminar
             // 
@@ -134,6 +138,7 @@
             this.btneliminar.TabIndex = 5;
             this.btneliminar.Text = "&Eliminar";
             this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // FrmListadoCategoriascs
             // 
