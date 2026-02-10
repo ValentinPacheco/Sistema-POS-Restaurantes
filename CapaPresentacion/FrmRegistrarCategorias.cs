@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
     public partial class FrmRegistrarCategorias : Form
     {
+        public bool Insert = false;
+        public bool Edit = false;
         public FrmRegistrarCategorias()
         {
             InitializeComponent();
+        }
+
+        private void FrmRegistrarCategorias_Load(object sender, EventArgs e)
+        {
+            this.Top = 0;
+            this.Left = 0;
         }
     }
 }

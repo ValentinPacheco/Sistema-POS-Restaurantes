@@ -104,6 +104,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmRegistrarCategorias";
             this.Text = "FrmRegistrarCategorias";
+            this.Load += new System.EventHandler(this.FrmRegistrarCategorias_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
