@@ -40,6 +40,7 @@
             this.dgvAuditoria.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAuditoria.Location = new System.Drawing.Point(0, 52);
             this.dgvAuditoria.Name = "dgvAuditoria";
+            this.dgvAuditoria.ReadOnly = true;
             this.dgvAuditoria.RowHeadersWidth = 51;
             this.dgvAuditoria.RowTemplate.Height = 24;
             this.dgvAuditoria.Size = new System.Drawing.Size(800, 398);
