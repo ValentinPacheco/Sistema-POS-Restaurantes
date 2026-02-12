@@ -29,6 +29,8 @@ namespace CapaPresentacion
             if (txtContraseña.Text == "1234")
             {
                 AccesoPermitido = true;
+                FrmAuditoria frm = new FrmAuditoria();
+                frm.ShowDialog();
                 this.Close();
             }
             else

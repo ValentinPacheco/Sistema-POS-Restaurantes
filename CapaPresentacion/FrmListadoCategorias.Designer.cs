@@ -187,6 +187,6 @@
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btneliminar;
-        private System.Windows.Forms.Button btnauditoria;
+        public System.Windows.Forms.Button btnauditoria;
     }
 }

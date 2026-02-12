@@ -107,8 +107,10 @@ namespace CapaPresentacion
 
         private void btnauditoria_Click(object sender, EventArgs e)
         {
-            FrmAuditoria frm = new FrmAuditoria();
-            frm.ShowDialog();
+
+            FrmPasswordAuditoria frm = new FrmPasswordAuditoria();
+                frm.ShowDialog();
+            
         }
     }
 }
