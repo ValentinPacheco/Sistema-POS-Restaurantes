@@ -38,6 +38,7 @@
             this.btnnuevo = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
+            this.btnauditoria = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlistado)).BeginInit();
             this.SuspendLayout();
@@ -141,11 +142,22 @@
             this.btneliminar.UseVisualStyleBackColor = true;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
+            // btnauditoria
+            // 
+            this.btnauditoria.Location = new System.Drawing.Point(17, 292);
+            this.btnauditoria.Name = "btnauditoria";
+            this.btnauditoria.Size = new System.Drawing.Size(75, 23);
+            this.btnauditoria.TabIndex = 6;
+            this.btnauditoria.Text = "Auditoria";
+            this.btnauditoria.UseVisualStyleBackColor = true;
+            this.btnauditoria.Click += new System.EventHandler(this.btnauditoria_Click);
+            // 
             // FrmListadoCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 340);
+            this.Controls.Add(this.btnauditoria);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnnuevo);
@@ -175,5 +187,6 @@
         private System.Windows.Forms.Button btnnuevo;
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btneliminar;
+        private System.Windows.Forms.Button btnauditoria;
     }
 }

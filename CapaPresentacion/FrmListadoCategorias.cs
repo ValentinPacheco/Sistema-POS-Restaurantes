@@ -104,5 +104,11 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
+
+        private void btnauditoria_Click(object sender, EventArgs e)
+        {
+            FrmAuditoria frm = new FrmAuditoria();
+            frm.ShowDialog();
+        }
     }
 }
