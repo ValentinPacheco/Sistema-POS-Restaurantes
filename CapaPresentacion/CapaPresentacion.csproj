@@ -56,6 +56,12 @@
     <Compile Include="FrmListadoCategorias.Designer.cs">
       <DependentUpon>FrmListadoCategorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPasswordAuditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPasswordAuditoria.Designer.cs">
+      <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCategorias.resx">
       <DependentUpon>FrmListadoCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPasswordAuditoria.resx">
+      <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCategorias.resx">
       <DependentUpon>FrmRegistrarCategorias.cs</DependentUpon>
