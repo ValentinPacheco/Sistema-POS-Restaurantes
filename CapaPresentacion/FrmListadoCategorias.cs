@@ -32,7 +32,7 @@ namespace CapaPresentacion
 
         public void Mostrar()
         {
-            this.dlistado.DataSource = CNCategorias.Listar();
+            this.dlistado.DataSource = CNCategorias.ListarCategorias();
         }
 
         public void BuscarNombre()

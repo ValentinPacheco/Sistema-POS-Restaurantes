@@ -62,6 +62,18 @@
     <Compile Include="FrmPasswordAuditoria.Designer.cs">
       <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProductoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductoNuevo.Designer.cs">
+      <DependentUpon>FrmProductoNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductos.Designer.cs">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPasswordAuditoria.resx">
       <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductoNuevo.resx">
+      <DependentUpon>FrmProductoNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductos.resx">
+      <DependentUpon>FrmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCategorias.resx">
       <DependentUpon>FrmRegistrarCategorias.cs</DependentUpon>

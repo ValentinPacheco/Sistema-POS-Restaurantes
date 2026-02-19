@@ -17,7 +17,7 @@ namespace POS_Restaurante
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CapaPresentacion.FrmListadoCategorias());
+            Application.Run(new CapaPresentacion.FrmProductos());
         }
     }
 }

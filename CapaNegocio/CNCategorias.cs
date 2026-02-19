@@ -10,7 +10,7 @@ namespace CapaNegocio
 {
     public class CNCategorias
     {
-        public static DataTable Listar()
+        public static DataTable ListarCategorias()
         { 
             CDCategorias Datos = new CDCategorias();
             return Datos.Listar();
@@ -44,5 +44,7 @@ namespace CapaNegocio
             Datos.Buscar = textoBuscar;
             return Datos.BuscarNombre(Datos);
         }
+
+
     }
 }

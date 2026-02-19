@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CNAuditoria.cs" />
     <Compile Include="CNCategorias.cs" />
+    <Compile Include="CNProductos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
