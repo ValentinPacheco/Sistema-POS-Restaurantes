@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CDAuditoria.cs" />
     <Compile Include="CDCategorias.cs" />
+    <Compile Include="CDUsuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
