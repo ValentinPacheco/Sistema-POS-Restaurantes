@@ -14,5 +14,10 @@ namespace CapaNegocio
         {
             return objDatos.Login(username, password);
         }
+        public void RegistrarLogin(int idUsuario)
+        {
+            objDatos.RegistrarLogin(idUsuario);
+        }
     }
+
 }

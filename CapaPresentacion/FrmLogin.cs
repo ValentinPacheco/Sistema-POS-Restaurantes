@@ -9,11 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CapaPresentacion
 {
     public partial class FrmLogin : Form
     {
         CNUsuarios objNegocio = new CNUsuarios();
+        CNAuditoria objAuditoria = new CNAuditoria();
 
         public FrmLogin()
         {
@@ -28,8 +30,11 @@ namespace CapaPresentacion
         private void btnLogin_Click(object sender, EventArgs e)
         {
             int idUsuario = objNegocio.Login(txtUsuario.Text, txtPassword.Text);
+
             if (idUsuario > 0)
             {
+                objAuditoria.RegistrarLogin(idUsuario);
+
                 FrmPrincipal frm = new FrmPrincipal();
                 frm.Show();
                 this.Hide();

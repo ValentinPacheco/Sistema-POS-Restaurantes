@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmAuditoriaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuditoriaLogin.Designer.cs">
+      <DependentUpon>FrmAuditoriaLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FrmAuditoria.resx">
       <DependentUpon>FrmAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuditoriaLogin.resx">
+      <DependentUpon>FrmAuditoriaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoCategorias.resx">
       <DependentUpon>FrmListadoCategorias.cs</DependentUpon>

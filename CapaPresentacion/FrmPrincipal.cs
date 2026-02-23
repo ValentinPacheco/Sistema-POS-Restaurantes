@@ -29,5 +29,11 @@ namespace CapaPresentacion
             FrmProductos frm = new FrmProductos();
             frm.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmAuditoriaLogin frm = new FrmAuditoriaLogin();
+            frm.Show();
+        }
     }
 }

@@ -19,7 +19,14 @@ namespace CapaDatos
                 cn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(
-                    "SELECT id_auditoria, tipo_cambio, fecha_cambio, datos_anteriores, datos_nuevos FROM dbo.auditoriacategorias ORDER BY fecha_cambio DESC", cn))
+                    @"SELECT a.id_auditoria,
+                     u.nombre,
+                     u.username,
+                     a.fecha_login
+              FROM auditoria_login a
+              INNER JOIN usuarios u 
+              ON a.id_usuario = u.id_usuario
+              ORDER BY a.fecha_login DESC", cn))
                 {
                     cmd.CommandType = CommandType.Text;
 
@@ -29,6 +36,19 @@ namespace CapaDatos
             }
 
             return dt;
+        }
+        public void RegistrarLogin(int idUsuario)
+        {
+            using (SqlConnection conexion = new SqlConnection(Conexion.Conn))
+            {
+                conexion.Open();
+
+                string query = "INSERT INTO auditoria_login (id_usuario) VALUES (@idUsuario)";
+
+                SqlCommand cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

@@ -10,11 +10,22 @@ namespace CapaNegocio
 {
     public class CNAuditoria
     {
-       CDAuditoria datos = new CDAuditoria();
+        CDAuditoria objDatos = new CDAuditoria(); 
+
+        CDAuditoria datos = new CDAuditoria();
 
         public DataTable MostrarAuditoria()
         {
             return datos.ListarAuditoria();
+        }
+
+        public DataTable ListarAuditoria()
+        {
+            return objDatos.ListarAuditoria();
+        }
+        public void RegistrarLogin(int idUsuario) // 👈 ESTE MÉTODO
+        {
+            objDatos.RegistrarLogin(idUsuario);
         }
     }
 }
