@@ -60,7 +60,7 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Location = new System.Drawing.Point(343, 183);
+            this.txtUsuario.Location = new System.Drawing.Point(354, 183);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(119, 22);
             this.txtUsuario.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.txtPassword.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.Location = new System.Drawing.Point(343, 232);
+            this.txtPassword.Location = new System.Drawing.Point(354, 232);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(213, 22);
             this.txtPassword.TabIndex = 3;
@@ -81,7 +81,7 @@
             this.btnLogin.Location = new System.Drawing.Point(336, 286);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(0);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 33);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
