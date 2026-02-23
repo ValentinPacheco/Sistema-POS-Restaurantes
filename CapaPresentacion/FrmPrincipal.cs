@@ -35,5 +35,10 @@ namespace CapaPresentacion
             FrmAuditoriaLogin frm = new FrmAuditoriaLogin();
             frm.Show();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

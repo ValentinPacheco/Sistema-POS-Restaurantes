@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListadoCategorias));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblnombre = new System.Windows.Forms.Label();
@@ -76,12 +77,13 @@
             // 
             // btnsalir
             // 
+            this.btnsalir.BackColor = System.Drawing.Color.Red;
             this.btnsalir.Location = new System.Drawing.Point(320, 35);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(75, 23);
             this.btnsalir.TabIndex = 2;
             this.btnsalir.Text = "&Salir";
-            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // btnbuscar
@@ -103,6 +105,7 @@
             // 
             // dlistado
             // 
+            this.dlistado.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dlistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dlistado.Location = new System.Drawing.Point(17, 116);
             this.dlistado.Name = "dlistado";
@@ -134,12 +137,13 @@
             // 
             // btneliminar
             // 
+            this.btneliminar.BackColor = System.Drawing.Color.White;
             this.btneliminar.Location = new System.Drawing.Point(337, 292);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(75, 23);
             this.btneliminar.TabIndex = 5;
             this.btneliminar.Text = "&Eliminar";
-            this.btneliminar.UseVisualStyleBackColor = true;
+            this.btneliminar.UseVisualStyleBackColor = false;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
             // btnauditoria
@@ -156,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 340);
+            this.ClientSize = new System.Drawing.Size(459, 340);
             this.Controls.Add(this.btnauditoria);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btneditar);
@@ -164,6 +168,7 @@
             this.Controls.Add(this.dlistado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmListadoCategorias";
             this.Text = "FrmListadoCategoriascs";
             this.Load += new System.EventHandler(this.FrmListadoCategoriascs_Load);

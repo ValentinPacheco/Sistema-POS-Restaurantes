@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistrarCategorias));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
@@ -65,18 +66,19 @@
             // 
             // btnguardar
             // 
+            this.btnguardar.BackColor = System.Drawing.Color.Lime;
             this.btnguardar.Location = new System.Drawing.Point(17, 175);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(75, 23);
             this.btnguardar.TabIndex = 3;
             this.btnguardar.Text = "&Guardar";
-            this.btnguardar.UseVisualStyleBackColor = true;
+            this.btnguardar.UseVisualStyleBackColor = false;
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // btncancelar
             // 
-            this.btncancelar.BackColor = System.Drawing.Color.Firebrick;
-            this.btncancelar.ForeColor = System.Drawing.Color.White;
+            this.btncancelar.BackColor = System.Drawing.Color.Red;
+            this.btncancelar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btncancelar.Location = new System.Drawing.Point(203, 175);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 23);
@@ -104,6 +106,7 @@
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRegistrarCategorias";
             this.Text = "FrmRegistrarCategorias";
             this.Load += new System.EventHandler(this.FrmRegistrarCategorias_Load);
