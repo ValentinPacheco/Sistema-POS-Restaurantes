@@ -34,6 +34,7 @@
             // 
             // dgvAuditoria
             // 
+            this.dgvAuditoria.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvAuditoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAuditoria.Location = new System.Drawing.Point(12, 12);
             this.dgvAuditoria.Name = "dgvAuditoria";

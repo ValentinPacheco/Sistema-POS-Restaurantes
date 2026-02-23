@@ -54,22 +54,24 @@
             // 
             // btnaceptar
             // 
+            this.btnaceptar.BackColor = System.Drawing.Color.Lime;
             this.btnaceptar.Location = new System.Drawing.Point(57, 165);
             this.btnaceptar.Name = "btnaceptar";
             this.btnaceptar.Size = new System.Drawing.Size(88, 23);
             this.btnaceptar.TabIndex = 2;
             this.btnaceptar.Text = "ACEPTAR";
-            this.btnaceptar.UseVisualStyleBackColor = true;
+            this.btnaceptar.UseVisualStyleBackColor = false;
             this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
             // btncancelar
             // 
+            this.btncancelar.BackColor = System.Drawing.Color.Red;
             this.btncancelar.Location = new System.Drawing.Point(186, 165);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(88, 23);
             this.btncancelar.TabIndex = 3;
             this.btncancelar.Text = "CANCELAR";
-            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // FrmPasswordAuditoria

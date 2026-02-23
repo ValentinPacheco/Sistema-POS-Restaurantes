@@ -36,6 +36,7 @@
             // 
             // dgvAuditoria
             // 
+            this.dgvAuditoria.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dgvAuditoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAuditoria.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAuditoria.Location = new System.Drawing.Point(0, 52);
@@ -49,22 +50,24 @@
             // 
             // btnactualizar
             // 
+            this.btnactualizar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnactualizar.Location = new System.Drawing.Point(12, 12);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(106, 23);
             this.btnactualizar.TabIndex = 1;
             this.btnactualizar.Text = "ACTUALIZAR";
-            this.btnactualizar.UseVisualStyleBackColor = true;
+            this.btnactualizar.UseVisualStyleBackColor = false;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // btnsalir
             // 
+            this.btnsalir.BackColor = System.Drawing.Color.Red;
             this.btnsalir.Location = new System.Drawing.Point(124, 12);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(75, 23);
             this.btnsalir.TabIndex = 2;
             this.btnsalir.Text = "SALIR";
-            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // FrmAuditoria
