@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAuditoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,12 @@
     </Compile>
     <Compile Include="FrmListadoCategorias.Designer.cs">
       <DependentUpon>FrmListadoCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPasswordAuditoria.cs">
       <SubType>Form</SubType>
@@ -95,8 +107,14 @@
     <EmbeddedResource Include="FrmListadoCategorias.resx">
       <DependentUpon>FrmListadoCategorias.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPasswordAuditoria.resx">
       <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductoNuevo.resx">
       <DependentUpon>FrmProductoNuevo.cs</DependentUpon>
