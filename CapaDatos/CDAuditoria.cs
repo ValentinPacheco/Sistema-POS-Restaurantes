@@ -37,16 +37,37 @@ namespace CapaDatos
 
             return dt;
         }
-        public void RegistrarLogin(int idUsuario)
+        public int RegistrarLogin(int idUsuario)
         {
-            using (SqlConnection conexion = new SqlConnection(Conexion.Conn))
+            using (SqlConnection cn = new SqlConnection(Conexion.Conn))
             {
-                conexion.Open();
+                cn.Open();
 
-                string query = "INSERT INTO auditoria_login (id_usuario) VALUES (@idUsuario)";
+                string query = @"INSERT INTO auditoria_login (id_usuario)
+                         VALUES (@idUsuario);
+                         SELECT SCOPE_IDENTITY();";
 
-                SqlCommand cmd = new SqlCommand(query, conexion);
+                SqlCommand cmd = new SqlCommand(query, cn);
                 cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+                int idAuditoria = Convert.ToInt32(cmd.ExecuteScalar());
+
+                return idAuditoria;
+            }
+        }
+
+        public void RegistrarLogout(int idAuditoria)
+        {
+            using (SqlConnection cn = new SqlConnection(Conexion.Conn))
+            {
+                cn.Open();
+
+                string query = @"UPDATE auditoria_login
+                         SET fecha_logout = GETDATE()
+                         WHERE id_auditoria = @idAuditoria";
+
+                SqlCommand cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@idAuditoria", idAuditoria);
                 cmd.ExecuteNonQuery();
             }
         }
