@@ -23,9 +23,9 @@ namespace CapaNegocio
         {
             return objDatos.ListarAuditoria();
         }
-        public void RegistrarLogin(int idUsuario)
+        public int RegistrarLogin(int idUsuario)
         {
-            objDatos.RegistrarLogin(idUsuario);
+            return objDatos.RegistrarLogin(idUsuario);
         }
         public void RegistrarLogout(int idAuditoria)
         {

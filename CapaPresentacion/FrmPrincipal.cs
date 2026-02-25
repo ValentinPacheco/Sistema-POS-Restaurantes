@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace CapaPresentacion
 {
     public partial class FrmPrincipal : Form
     {
-        public FrmPrincipal()
+
+        private int _idAuditoria;
+        CNAuditoria objAuditoria = new CNAuditoria();
+        public FrmPrincipal(int idAuditoria)
         {
             InitializeComponent();
+            _idAuditoria = idAuditoria;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +44,16 @@ namespace CapaPresentacion
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            objAuditoria.RegistrarLogout(_idAuditoria);
+
+            FrmLogin login = new FrmLogin();
+            login.Show();
+
+            this.Close();
         }
     }
 }

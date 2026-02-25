@@ -33,9 +33,9 @@ namespace CapaPresentacion
 
             if (idUsuario > 0)
             {
-                objAuditoria.RegistrarLogin(idUsuario);
+                int idAuditoria = objAuditoria.RegistrarLogin(idUsuario);
 
-                FrmPrincipal frm = new FrmPrincipal();
+                FrmPrincipal frm = new FrmPrincipal(idAuditoria);
                 frm.Show();
                 this.Hide();
             }

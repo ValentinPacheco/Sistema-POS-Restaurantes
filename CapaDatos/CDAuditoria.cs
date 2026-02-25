@@ -19,14 +19,14 @@ namespace CapaDatos
                 cn.Open();
 
                 using (SqlCommand cmd = new SqlCommand(
-                    @"SELECT a.id_auditoria,
-                     u.nombre,
-                     u.username,
-                     a.fecha_login
-              FROM auditoria_login a
-              INNER JOIN usuarios u 
-              ON a.id_usuario = u.id_usuario
-              ORDER BY a.fecha_login DESC", cn))
+                        @"SELECT u.nombre,
+                                 u.username,
+                                 a.fecha_login,
+                                 a.fecha_logout
+                          FROM auditoria_login a
+                          INNER JOIN usuarios u 
+                          ON a.id_usuario = u.id_usuario
+                          ORDER BY a.fecha_login DESC", cn))
                 {
                     cmd.CommandType = CommandType.Text;
 
