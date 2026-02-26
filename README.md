@@ -1,51 +1,51 @@
-# Sistema POS para pequeÒos negocios restauranteros
+# Sistema POS para peque√±os negocios restauranteros
 
 **Equipo:**  
-- Camargo Miguel  
-- Pacheco Juan Pablo  
+- Camargo Loaiza Miguel Angel 
+- Pacheco Olivs Juan Pablo Valent√≠n 
 
 ---
 
-## Problem·tica
+## Problem√°tica
 
-En la ciudad de **Hermosillo**, existe una gran cantidad de pequeÒos y medianos negocios del sector restaurantero (taquerÌas, fondas, cafeterÌas y puestos de comida) que operan con procesos administrativos deficientes, principalmente por:
+En la ciudad de **Hermosillo**, existe una gran cantidad de peque√±os y medianos negocios del sector restaurantero (taquer√≠as, fondas, cafeter√≠as y puestos de comida) que operan con procesos administrativos deficientes, principalmente por:
 
 - Uso de libretas o registros manuales  
 - Falta de control real sobre ventas diarias  
 - Errores frecuentes en cortes de caja  
-- PÈrdida de informaciÛn histÛrica  
-- Desconocimiento de productos m·s vendidos  
+- P√©rdida de informaci√≥n hist√≥rica  
+- Desconocimiento de productos m√°s vendidos  
 - Falta de control de inventarios  
 - Dependencia total de la memoria del encargado  
 
-Estas pr·cticas provocan **pÈrdidas econÛmicas**, desorganizaciÛn operativa y dificultan la toma de decisiones, limitando el crecimiento del negocio.
+Estas pr√°cticas provocan **p√©rdidas econ√≥micas**, desorganizaci√≥n operativa y dificultan la toma de decisiones, limitando el crecimiento del negocio.
 
-Adem·s, muchos propietarios no utilizan sistemas comerciales existentes debido a:
+Adem√°s, muchos propietarios no utilizan sistemas comerciales existentes debido a:
 
 - Costos elevados  
 - Complejidad de uso  
-- Requerimientos tÈcnicos (internet constante, hardware especial)  
-- Falta de adaptaciÛn a la realidad local  
+- Requerimientos t√©cnicos (internet constante, hardware especial)  
+- Falta de adaptaci√≥n a la realidad local  
 
 ---
 
 ## Objetivo general
 
-Desarrollar un **sistema de punto de venta (POS)** para restaurantes pequeÒos en Hermosillo que permita mejorar la administraciÛn, el control de ventas y la toma de decisiones, mediante una herramienta **accesible, f·cil de usar y adaptada** a las necesidades reales del negocio local.
+Desarrollar un **sistema de punto de venta (POS)** para restaurantes peque√±os en Hermosillo que permita mejorar la administraci√≥n, el control de ventas y la toma de decisiones, mediante una herramienta **accesible, f√°cil de usar y adaptada** a las necesidades reales del negocio local.
 
 ---
 
-## Objetivos especÌficos
+## Objetivos espec√≠ficos
 
 - Automatizar el proceso de ventas, reduciendo errores humanos al registrar pedidos y cobros.  
-- Centralizar la informaciÛn de ventas, usuarios y caja en una base de datos estructurada y segura.  
+- Centralizar la informaci√≥n de ventas, usuarios y caja en una base de datos estructurada y segura.  
 - Facilitar el control de caja, permitiendo aperturas, cierres y registros de movimientos claros y verificables.  
-- Proporcionar reportes b·sicos:
+- Proporcionar reportes b√°sicos:
   - Ventas diarias  
-  - Productos m·s vendidos  
-  - Ingresos por mÈtodo de pago  
+  - Productos m√°s vendidos  
+  - Ingresos por m√©todo de pago  
 - Mejorar la transparencia del negocio, identificando inconsistencias en ingresos y gastos.  
-- Ofrecer una soluciÛn econÛmica y pr·ctica para pequeÒos negocios.  
+- Ofrecer una soluci√≥n econ√≥mica y pr√°ctica para peque√±os negocios.  
 - Reducir la dependencia de procesos manuales, permitiendo al propietario enfocarse en el crecimiento del negocio.  
 
 ---
@@ -53,66 +53,66 @@ Desarrollar un **sistema de punto de venta (POS)** para restaurantes pequeÒos en
 ## Enfoque, limitaciones y expectativas
 
 ### Enfoque del sistema
-- Restaurantes pequeÒos y medianos  
-- OperaciÛn local (una sola sucursal)  
+- Restaurantes peque√±os y medianos  
+- Operaci√≥n local (una sola sucursal)  
 - Uso en equipos de escritorio  
-- Funcionamiento sin conexiÛn constante a internet  
+- Funcionamiento sin conexi√≥n constante a internet  
 
 ### No contempla inicialmente
-- FacturaciÛn electrÛnica  
+- Facturaci√≥n electr√≥nica  
 - Integraciones bancarias  
-- OperaciÛn multisucursal  
+- Operaci√≥n multisucursal  
 
 ### Expectativas
 Se espera que los negocios que implementen el sistema:
 
 - Mejoren su control administrativo  
-- Disminuyan pÈrdidas por mala gestiÛn  
-- Logren una mejor gestiÛn operativa  
-- Obtengan informaciÛn confiable para la toma de decisiones  
+- Disminuyan p√©rdidas por mala gesti√≥n  
+- Logren una mejor gesti√≥n operativa  
+- Obtengan informaci√≥n confiable para la toma de decisiones  
 - Profesionalicen su negocio  
 
 ---
 
-## TecnologÌas
+## Tecnolog√≠as
 
 ### Lenguaje y plataforma
-El sistema ser· desarrollado utilizando **C#** como lenguaje de programaciÛn principal, ejecut·ndose sobre la plataforma **.NET**, permitiendo construir una aplicaciÛn robusta, eficiente y adecuada para entornos empresariales.
+El sistema ser√° desarrollado utilizando **C#** como lenguaje de programaci√≥n principal, ejecut√°ndose sobre la plataforma **.NET**, permitiendo construir una aplicaci√≥n robusta, eficiente y adecuada para entornos empresariales.
 
-### Interfaz gr·fica
-La interfaz ser· implementada mediante **Windows Forms**, ofreciendo un entorno visual intuitivo, sencillo de usar y optimizado para equipos de cÛmputo utilizados en restaurantes.
+### Interfaz gr√°fica
+La interfaz ser√° implementada mediante **Windows Forms**, ofreciendo un entorno visual intuitivo, sencillo de usar y optimizado para equipos de c√≥mputo utilizados en restaurantes.
 
 ---
 
 ## Sistema gestor de base de datos
 
-Para el almacenamiento y gestiÛn de la informaciÛn se utilizar· **Microsoft SQL Server**, permitiendo manejar de forma segura los datos relacionados con:
+Para el almacenamiento y gesti√≥n de la informaci√≥n se utilizar√° **Microsoft SQL Server**, permitiendo manejar de forma segura los datos relacionados con:
 
 - Usuarios  
 - Roles  
 - Productos  
-- CategorÌas  
+- Categor√≠as  
 - Pedidos  
 - Pagos  
 - Caja  
 - Movimientos financieros  
 
-El acceso a la base de datos se realizar· mediante **ADO.NET**, permitiendo la ejecuciÛn de consultas SQL, procedimientos almacenados y transacciones desde la aplicaciÛn en C#.
+El acceso a la base de datos se realizar√° mediante **ADO.NET**, permitiendo la ejecuci√≥n de consultas SQL, procedimientos almacenados y transacciones desde la aplicaci√≥n en C#.
 
 ---
 
 ## Seguridad de datos
 
-Se implementar· el uso de **System.Security.Cryptography** para el cifrado de contraseÒas, evitando el almacenamiento de informaciÛn sensible en texto plano y fortaleciendo el control de acceso al sistema.
+Se implementar√° el uso de **System.Security.Cryptography** para el cifrado de contrase√±as, evitando el almacenamiento de informaci√≥n sensible en texto plano y fortaleciendo el control de acceso al sistema.
 
 ---
 
 ## Arquitectura del sistema
 
-El sistema seguir· una **arquitectura en capas**, separando:
+El sistema seguir√° una **arquitectura en capas**, separando:
 
-- Interfaz gr·fica  
-- LÛgica de negocio  
+- Interfaz gr√°fica  
+- L√≥gica de negocio  
 - Acceso a datos  
 
-Esto permitir· un desarrollo ordenado, escalable y f·cil de mantener, adem·s de facilitar futuras mejoras o migraciones tecnolÛgicas.
+Esto permitir√° un desarrollo ordenado, escalable y f√°cil de mantener, adem√°s de facilitar futuras mejoras o migraciones tecnol√≥gicas.
