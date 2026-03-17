@@ -10,6 +10,36 @@ namespace CapaDatos
 {
     public class CDVenta
     {
+        public DataTable ListarProductos()
+        {
+            using (SqlConnection con = new SqlConnection(Conexion.Conn))
+            {
+                con.Open();
+
+                SqlDataAdapter da = new SqlDataAdapter(
+                    "SELECT id_producto, nombre, precio FROM productos WHERE activo = 1", con);
+
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                return dt;
+            }
+        }
+
+        public decimal ObtenerPrecio(int idProducto)
+        {
+            using (SqlConnection con = new SqlConnection(Conexion.Conn))
+            {
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(
+                    "SELECT precio FROM productos WHERE id_producto = @id", con);
+
+                cmd.Parameters.AddWithValue("@id", idProducto);
+
+                return Convert.ToDecimal(cmd.ExecuteScalar());
+            }
+        }
         public int InsertarPedido(int idUsuario, int idMesa)
         {
             using (SqlConnection con = new SqlConnection(Conexion.Conn))

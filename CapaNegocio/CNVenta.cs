@@ -1,6 +1,7 @@
 ﻿using CapaDatos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,17 @@ namespace CapaNegocio
     {
         CDVenta dVenta = new CDVenta();
 
+        public DataTable ListarProductos()
+        {
+            CDVenta dVenta = new CDVenta();
+            return dVenta.ListarProductos();
+        }
+
+        public decimal ObtenerPrecio(int idProducto)
+        {
+            CDVenta dVenta = new CDVenta();
+            return dVenta.ObtenerPrecio(idProducto);
+        }
         public int CrearPedido(int idUsuario, int idMesa)
         {
             return dVenta.InsertarPedido(idUsuario, idMesa);
