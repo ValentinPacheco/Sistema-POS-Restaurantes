@@ -72,6 +72,7 @@
     <Compile Include="CDCategorias.cs" />
     <Compile Include="CDProductos.cs" />
     <Compile Include="CDUsuarios.cs" />
+    <Compile Include="CDVenta.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

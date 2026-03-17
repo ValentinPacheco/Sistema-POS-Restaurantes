@@ -14,13 +14,15 @@ namespace CapaPresentacion
     public partial class FrmPrincipal : Form
     {
 
-        private int _idAuditoria;
+        public int _idAuditoria;
         CNAuditoria objAuditoria = new CNAuditoria();
         public FrmPrincipal(int idAuditoria)
         {
             InitializeComponent();
             _idAuditoria = idAuditoria;
         }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
