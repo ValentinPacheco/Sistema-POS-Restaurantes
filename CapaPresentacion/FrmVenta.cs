@@ -16,13 +16,14 @@ namespace CapaPresentacion
         public FrmVentas()
         {
             InitializeComponent();
+            this.Load += FrmVentas_Load;
         }
 
         private void FrmVentas_Load(object sender, EventArgs e)
         {
+            ConfigurarGrid();
             CrearPedido();
             CargarProductos();
-            ConfigurarGrid();
         }
 
         // =============================

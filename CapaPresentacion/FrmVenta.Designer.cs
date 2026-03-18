@@ -62,6 +62,7 @@
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEliminar
             // 
@@ -71,6 +72,7 @@
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // bntConfirmar
             // 
@@ -80,9 +82,11 @@
             this.bntConfirmar.TabIndex = 4;
             this.bntConfirmar.Text = "Confirmar";
             this.bntConfirmar.UseVisualStyleBackColor = true;
+            this.bntConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // dgvDetalle
             // 
+            this.dgvDetalle.AllowUserToOrderColumns = true;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.Location = new System.Drawing.Point(63, 150);
             this.dgvDetalle.Name = "dgvDetalle";
@@ -94,7 +98,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(445, 405);
+            this.lblTotal.Location = new System.Drawing.Point(625, 317);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(44, 16);
             this.lblTotal.TabIndex = 6;

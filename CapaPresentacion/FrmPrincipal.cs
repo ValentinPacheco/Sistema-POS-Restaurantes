@@ -67,5 +67,11 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            FrmVentas frm = new FrmVentas();
+            frm.Show();
+        }
     }
 }
