@@ -100,9 +100,9 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Location = new System.Drawing.Point(625, 317);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.Size = new System.Drawing.Size(41, 16);
             this.lblTotal.TabIndex = 6;
-            this.lblTotal.Text = "label1";
+            this.lblTotal.Text = "Total:";
             // 
             // FrmVentas
             // 
