@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnFaltantes = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -185,6 +186,22 @@
             this.btnFaltantes.UseVisualStyleBackColor = false;
             this.btnFaltantes.Click += new System.EventHandler(this.btnFaltantes_Click);
             // 
+            // btnProveedores
+            // 
+            this.btnProveedores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnProveedores.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnProveedores.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.Location = new System.Drawing.Point(0, 315);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(159, 39);
+            this.btnProveedores.TabIndex = 11;
+            this.btnProveedores.Text = "PROVEEDORES";
+            this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -192,6 +209,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1012, 567);
+            this.Controls.Add(this.btnProveedores);
             this.Controls.Add(this.btnFaltantes);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.label3);
@@ -224,5 +242,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.Button btnFaltantes;
+        private System.Windows.Forms.Button btnProveedores;
     }
 }

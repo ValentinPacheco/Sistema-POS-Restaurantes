@@ -45,6 +45,7 @@
     <Compile Include="CNCategorias.cs" />
     <Compile Include="CNFaltantes.cs" />
     <Compile Include="CNProductos.cs" />
+    <Compile Include="CNProveedores.cs" />
     <Compile Include="CNUsuarios.cs" />
     <Compile Include="CNVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
