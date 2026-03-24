@@ -25,5 +25,51 @@ namespace CapaPresentacion
         {
             dgvProveedores.DataSource = obj.MostrarProveedores();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvProveedores.DataSource = obj.BuscarProveedor(txtBuscar.Text);
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvProveedores.CurrentRow == null) return;
+
+            int id = Convert.ToInt32(dgvProveedores.CurrentRow.Cells["id_proveedor"].Value);
+            string nombre = dgvProveedores.CurrentRow.Cells["nombre"].Value.ToString();
+            string telefono = dgvProveedores.CurrentRow.Cells["telefono"].Value.ToString();
+
+            FrmProveedorEditar frm = new FrmProveedorEditar(id, nombre, telefono);
+            frm.ShowDialog();
+
+            // 🔄 recargar
+            dgvProveedores.DataSource = obj.MostrarProveedores();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvProveedores.CurrentRow == null) return;
+
+            int id = Convert.ToInt32(dgvProveedores.CurrentRow.Cells["id_proveedor"].Value);
+
+            var confirm = MessageBox.Show("¿Eliminar proveedor?", "Confirmar", MessageBoxButtons.YesNo);
+
+            if (confirm == DialogResult.Yes)
+            {
+                obj.EliminarProveedor(id);
+
+                MessageBox.Show("Proveedor eliminado");
+                dgvProveedores.DataSource = obj.MostrarProveedores();
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FrmProveedorNuevo frm = new FrmProveedorNuevo();
+            frm.ShowDialog();
+
+            dgvProveedores.DataSource = obj.MostrarProveedores();
+        }
     }
 }
