@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAuditoria));
             this.dgvAuditoria = new System.Windows.Forms.DataGridView();
             this.btnactualizar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
@@ -36,7 +37,7 @@
             // 
             // dgvAuditoria
             // 
-            this.dgvAuditoria.BackgroundColor = System.Drawing.Color.PaleTurquoise;
+            this.dgvAuditoria.BackgroundColor = System.Drawing.SystemColors.MenuBar;
             this.dgvAuditoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAuditoria.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAuditoria.Location = new System.Drawing.Point(0, 52);
@@ -50,7 +51,7 @@
             // 
             // btnactualizar
             // 
-            this.btnactualizar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnactualizar.BackColor = System.Drawing.Color.Transparent;
             this.btnactualizar.Location = new System.Drawing.Point(12, 12);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(106, 23);
@@ -61,7 +62,7 @@
             // 
             // btnsalir
             // 
-            this.btnsalir.BackColor = System.Drawing.Color.Red;
+            this.btnsalir.BackColor = System.Drawing.Color.Transparent;
             this.btnsalir.Location = new System.Drawing.Point(124, 12);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(75, 23);
@@ -74,10 +75,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.dgvAuditoria);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAuditoria";
             this.Text = "FrmAuditoria";
             this.Load += new System.EventHandler(this.FrmAuditoria_Load);

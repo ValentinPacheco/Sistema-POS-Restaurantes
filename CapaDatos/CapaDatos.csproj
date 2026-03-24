@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="CDAuditoria.cs" />
     <Compile Include="CDCategorias.cs" />
+    <Compile Include="CDFaltantes.cs" />
     <Compile Include="CDProductos.cs" />
     <Compile Include="CDUsuarios.cs" />
     <Compile Include="CDVenta.cs" />

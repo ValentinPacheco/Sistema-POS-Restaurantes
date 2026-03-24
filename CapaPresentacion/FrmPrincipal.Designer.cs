@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnVenta = new System.Windows.Forms.Button();
+            this.btnFaltantes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(371, 252);
+            this.label1.Location = new System.Drawing.Point(372, 252);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(395, 43);
             this.label1.TabIndex = 0;
@@ -61,7 +62,7 @@
             this.button1.BackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(0, 136);
@@ -79,7 +80,7 @@
             this.button2.BackColor = System.Drawing.Color.SteelBlue;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(0, 180);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 39);
@@ -95,7 +96,7 @@
             this.button3.BackColor = System.Drawing.Color.SteelBlue;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Segoe UI Variable Display", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(0, 529);
             this.button3.Name = "button3";
@@ -110,7 +111,7 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(859, 520);
+            this.button4.Location = new System.Drawing.Point(860, 520);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(132, 30);
             this.button4.TabIndex = 5;
@@ -136,7 +137,7 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(865, 9);
+            this.label2.Location = new System.Drawing.Point(856, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 24);
             this.label2.TabIndex = 7;
@@ -146,7 +147,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(800, 33);
+            this.label3.Location = new System.Drawing.Point(791, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 24);
             this.label3.TabIndex = 8;
@@ -159,7 +160,7 @@
             this.btnVenta.BackColor = System.Drawing.Color.SteelBlue;
             this.btnVenta.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVenta.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenta.Location = new System.Drawing.Point(0, 225);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(159, 39);
@@ -168,13 +169,30 @@
             this.btnVenta.UseVisualStyleBackColor = false;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
+            // btnFaltantes
+            // 
+            this.btnFaltantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnFaltantes.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnFaltantes.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnFaltantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFaltantes.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaltantes.Location = new System.Drawing.Point(0, 270);
+            this.btnFaltantes.Name = "btnFaltantes";
+            this.btnFaltantes.Size = new System.Drawing.Size(159, 39);
+            this.btnFaltantes.TabIndex = 10;
+            this.btnFaltantes.Text = "FALTANTES";
+            this.btnFaltantes.UseVisualStyleBackColor = false;
+            this.btnFaltantes.Click += new System.EventHandler(this.btnFaltantes_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1011, 567);
+            this.ClientSize = new System.Drawing.Size(1012, 567);
+            this.Controls.Add(this.btnFaltantes);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -205,5 +223,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnVenta;
+        private System.Windows.Forms.Button btnFaltantes;
     }
 }

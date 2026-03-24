@@ -1,7 +1,8 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
-using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -167,6 +168,22 @@ namespace CapaPresentacion
                 dgvDetalle.Rows.Remove(dgvDetalle.CurrentRow);
                 CalcularTotal();
             }
+        }
+
+        private void btnFaltante_Click(object sender, EventArgs e)
+        {
+            if (dgvDetalle.CurrentRow == null)
+            {
+                MessageBox.Show("Selecciona un producto");
+                return;
+            }
+
+            int idProducto = Convert.ToInt32(dgvDetalle.CurrentRow.Cells["id_producto"].Value);
+
+            CN_Faltantes obj = new CN_Faltantes();
+            obj.AgregarFaltante(idProducto);
+
+            MessageBox.Show("Producto marcado como faltante");
         }
     }
 }

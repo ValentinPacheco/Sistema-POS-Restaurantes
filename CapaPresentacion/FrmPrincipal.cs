@@ -73,5 +73,11 @@ namespace CapaPresentacion
             FrmVentas frm = new FrmVentas();
             frm.Show();
         }
+
+        private void btnFaltantes_Click(object sender, EventArgs e)
+        {
+            FrmReabastecimiento frm = new FrmReabastecimiento();
+            frm.Show();
+        }
     }
 }
