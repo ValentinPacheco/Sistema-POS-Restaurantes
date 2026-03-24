@@ -54,5 +54,11 @@ namespace CapaPresentacion
 
             CargarFaltantes();
         }
+
+        private void btnPedir_Click(object sender, EventArgs e)
+        {
+            FrmPedidoProveedor frm = new FrmPedidoProveedor();
+            frm.ShowDialog();
+        }
     }
 }

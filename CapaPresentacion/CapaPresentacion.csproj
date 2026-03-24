@@ -50,6 +50,12 @@
     <Compile Include="FrmAuditoriaLogin.Designer.cs">
       <DependentUpon>FrmAuditoriaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPedidosProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidosProveedor.Designer.cs">
+      <DependentUpon>FrmPedidosProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPasswordAuditoria.resx">
       <DependentUpon>FrmPasswordAuditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPedidosProveedor.resx">
+      <DependentUpon>FrmPedidosProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
