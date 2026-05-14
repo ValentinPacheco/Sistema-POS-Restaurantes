@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -37,30 +36,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnFaltantes = new System.Windows.Forms.Button();
-            this.btnProveedores = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.Location = new System.Drawing.Point(1190, 328);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 33);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "CATEGORIAS";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -86,7 +67,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Variable Display", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(1190, 448);
+            this.button3.Location = new System.Drawing.Point(1267, 700);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 32);
             this.button3.TabIndex = 4;
@@ -150,32 +131,18 @@
             // btnFaltantes
             // 
             this.btnFaltantes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnFaltantes.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnFaltantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(34)))));
             this.btnFaltantes.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
             this.btnFaltantes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFaltantes.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFaltantes.Location = new System.Drawing.Point(1190, 569);
+            this.btnFaltantes.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFaltantes.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnFaltantes.Location = new System.Drawing.Point(906, 11);
             this.btnFaltantes.Name = "btnFaltantes";
-            this.btnFaltantes.Size = new System.Drawing.Size(159, 33);
+            this.btnFaltantes.Size = new System.Drawing.Size(159, 35);
             this.btnFaltantes.TabIndex = 10;
-            this.btnFaltantes.Text = "FALTANTES";
+            this.btnFaltantes.Text = "❌ FALTANTES";
             this.btnFaltantes.UseVisualStyleBackColor = false;
             this.btnFaltantes.Click += new System.EventHandler(this.btnFaltantes_Click);
-            // 
-            // btnProveedores
-            // 
-            this.btnProveedores.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnProveedores.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnProveedores.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
-            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.Font = new System.Drawing.Font("Segoe UI Variable Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedores.Location = new System.Drawing.Point(1190, 508);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(159, 33);
-            this.btnProveedores.TabIndex = 11;
-            this.btnProveedores.Text = "PROVEEDORES";
-            this.btnProveedores.UseVisualStyleBackColor = false;
-            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // label1
             // 
@@ -250,12 +217,10 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnProveedores);
             this.Controls.Add(this.btnFaltantes);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
             this.Text = "Form1";
@@ -265,7 +230,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -273,7 +237,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.Button btnFaltantes;
-        private System.Windows.Forms.Button btnProveedores;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

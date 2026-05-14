@@ -88,20 +88,22 @@
             // 
             // bntConfirmar
             // 
+            this.bntConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.bntConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntConfirmar.Location = new System.Drawing.Point(1258, 687);
+            this.bntConfirmar.Location = new System.Drawing.Point(1249, 687);
             this.bntConfirmar.Name = "bntConfirmar";
-            this.bntConfirmar.Size = new System.Drawing.Size(127, 45);
+            this.bntConfirmar.Size = new System.Drawing.Size(136, 45);
             this.bntConfirmar.TabIndex = 4;
             this.bntConfirmar.Text = "Confirmar";
-            this.bntConfirmar.UseVisualStyleBackColor = true;
+            this.bntConfirmar.UseVisualStyleBackColor = false;
             this.bntConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // dgvDetalle
             // 
             this.dgvDetalle.AllowUserToOrderColumns = true;
             this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDetalle.BackgroundColor = System.Drawing.SystemColors.MenuBar;
+            this.dgvDetalle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgvDetalle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvDetalle.Location = new System.Drawing.Point(53, 182);
@@ -127,11 +129,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Location = new System.Drawing.Point(601, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 44);
+            this.label1.Size = new System.Drawing.Size(357, 45);
             this.label1.TabIndex = 7;
             this.label1.Text = "Venta de Productos";
             // 
