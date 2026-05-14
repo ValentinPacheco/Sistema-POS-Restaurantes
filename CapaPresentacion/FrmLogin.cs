@@ -44,5 +44,10 @@ namespace CapaPresentacion
                 MessageBox.Show("Usuario o contraseña incorrectos");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
