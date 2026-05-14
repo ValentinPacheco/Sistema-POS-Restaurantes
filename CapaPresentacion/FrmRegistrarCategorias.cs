@@ -15,6 +15,10 @@ namespace CapaPresentacion
     {
         public bool Insert = false;
         public bool Edit = false;
+
+        public int IdCategoria { get; internal set; }
+        public string Nombre { get; internal set; }
+
         public FrmRegistrarCategorias()
         {
             InitializeComponent();
@@ -49,10 +53,6 @@ namespace CapaPresentacion
 
                     this.Insert = false;
                     this.Edit = false;
-
-                    FrmListadoCategorias form = new FrmListadoCategorias();
-                    form.Show();
-                    this.Hide();
                 }
             }
             catch (Exception ex)
@@ -63,9 +63,7 @@ namespace CapaPresentacion
 
         private void btncancelar_Click(object sender, EventArgs e)
         {
-            FrmListadoCategorias form = new FrmListadoCategorias();
-            form.Show();
-            this.Hide();
+
         }
     }
 }

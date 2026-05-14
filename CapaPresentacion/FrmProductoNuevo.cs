@@ -29,7 +29,6 @@ namespace CapaPresentacion
 
         private void FrmProductoNuevo_Load(object sender, EventArgs e)
         {
-            CargarCategorias();
 
             if (IdProducto != 0)
             {
@@ -40,12 +39,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void CargarCategorias()
-        {
-            cbCategoria.DataSource =  CNCategorias.ListarCategorias();
-            cbCategoria.DisplayMember = "nombre";
-            cbCategoria.ValueMember = "id_categoria";
-        }
+
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {

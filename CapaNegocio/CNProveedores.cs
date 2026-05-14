@@ -11,6 +11,12 @@ namespace CapaNegocio
     public class CN_Proveedores
     {
         CD_Proveedores obj = new CD_Proveedores();
+        public DataTable ListarProveedores()
+        {
+            CD_Proveedores objDatos = new CD_Proveedores();
+
+            return objDatos.ListarProveedores();
+        }
 
         public DataTable MostrarProveedores()
         {

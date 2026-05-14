@@ -13,12 +13,22 @@ namespace CapaPresentacion
 {
     public partial class FrmProveedorNuevo : Form
     {
-        CN_Proveedores obj = new CN_Proveedores();
+        CN_Proveedores objProveedores = new CN_Proveedores();
+
+        public int IdProveedor { get; set; }
+
+        public string Nombre { get; set; }
+
+        public string Telefono { get; set; }
+
+        public string Direccion { get; set; }
 
         public FrmProveedorNuevo()
         {
             InitializeComponent();
         }
+
+    
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -28,7 +38,7 @@ namespace CapaPresentacion
                 return;
             }
 
-            obj.AgregarProveedor(
+            objProveedores.AgregarProveedor(
                 txtNombre.Text,
                 txtTelefono.Text            );
 

@@ -26,8 +26,6 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmListadoCategorias frm = new FrmListadoCategorias();
-            frm.ShowDialog();
 
         }
 
@@ -78,8 +76,7 @@ namespace CapaPresentacion
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            FrmProveedores frm = new FrmProveedores();
-            frm.Show();
+
         }
     }
 }
